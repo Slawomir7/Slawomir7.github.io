@@ -1,0 +1,171 @@
+<!doctype HTML>
+<html>
+<!--Curriculum vitae. My online resumee.
+Below is head section with navigation pane, links to my online places, my name, logo.-->
+<head>
+    <!--My CSS stylesheet.-->
+    <link rel="stylesheet" href="CVSOS2.css">
+    <!--JavaScript script.-->
+    <script src="CVSOS2.js"></script>
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="logo16.png">
+    <title>Sławomir Sosfa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <nav class="Cnav">
+        <!--SVG below contains logo.-->
+        <svg class="Csvgc" width="55" height="65" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="igrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#f50;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#ffcc00;stop-opacity:1">
+                </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="53" height="65" fill="url(#igrad)" />
+            <circle cx="10" cy="10" r="15" stroke="#f7f7f7" fill="transparent" stroke-width="10px" />
+            <circle cx="10" cy="40" r="15" stroke="#f7f7f7" fill="transparent" stroke-width="10px" />
+            <circle cx="40" cy="10" r="15" stroke="#f7f7f7" fill="transparent" stroke-width="10px" />
+            <rect x="25" y="25" rx="15" ry="15" width="30" height="45" fill="transparent" stroke="#f7f7f7"
+                stroke-width="10px" />
+            <circle cx="10" cy="70" r="15" stroke="#f7f7f7" fill="#f7f7f7" stroke-width="10px" />
+            <circle cx="25" cy="25" r="5" stroke="#f7f7f7" fill="#f7f7f7" stroke-width="0px" />
+        </svg>
+        <header class="Cheader">
+            <h1>Sławomir Sosfa</h1>
+            <p id="ipunder">Piping engineer and front-end developer</p>
+        </header>
+        <a class="Ca" href="https://www.linkedin.com/in/slawomirsosfa" target="_new">LinkedIn</a>
+        <a class="Ca" href="https://superuser.com/users/697313/slawomir" target="_new">Stackexchange</a>
+        <a class="Ca" href="http://www.logoword.blogspot.com" target="_new">Logoword</a>
+        <a class="Ca" href="https://knowledge.autodesk.com/profile/LZ1N3RYGLJBTR/screencasts"
+            target="_new">Screencasts</a>
+        <a class="Ca" href="https://forums.autodesk.com/t5/user/viewprofilepage/user-id/2283590"
+            target="_new">Autodesk</a>
+    </nav>
+</head>
+
+<!--Body. Here is described about me, experience, skills, hobby etc. in a nutshell.-->
+<body>
+    <div class="Cpage">
+        <section class="Csection">
+            <img id="iimg" src="portrait240t.png" alt="Authors portrait" height="166" width="166">
+            <div>
+                <h2>About me</h2>
+                <p>
+                    Hi, I'm Slawomir.<br>
+                    I'm piping engineer.<br>
+                    Who?<span id="irmhide">...</span><br><span id="irmshow"><!--This part is hidden by default.-->
+                        <br>Well, piping is just about pipes. Small and big ones. Diameter 15mm up to 1000mm and above.
+                        Easy topic? Yes, it's only about straight pipes?<br><br>
+                        Lets take power plant for example. How long are pipes inside one powerplant? 1 km? 10km? Could
+                        be even more than 100 km.<br><br>
+                        <!--steelworks it's not my strong side yet.-->
+                        Steel pipes, stainless steel pipes, plastic pipes. Which wall thickness? With or without
+                        insulation? Heat tracing? Personal protection? Should it be lined inside? Rubber, glass? What
+                        flows inside? Water, steam, natural gas, air, compressed air, process air, slurry. What is the
+                        fluid pressure and temperature value? What pressure rating flanges we need? Would pipe supports
+                        carry the load? Do we need anchor points? Do pipes have enough flexibility? Is there enough
+                        space between pipes and electric trays? Is steel structure strong enough? Seems overwhelming.
+                        Yes, it is. Even after dozen years of experience in this field there is still a lot to learn.
+                        Industry is still moving on, new technologies are continuously shaping this proffesion. All of
+                        above and much more need to be done to complete a plant piping. This is a job for well organized
+                        team. Tasks are divided between specialized engineers. I'm one of them.<br><br>
+                        Beside brain my tools to achive goals is software such as Plant 3D and CADWorx Plant Design.
+                        Both are based on databases. One out of many task is to get reports like quantity material
+                        report, clash report, isometric drawing list. Another is design simple (doesn't mean easy) 3D
+                        piping plant layout. Both greenfield and brownfield projects. First is built from scratches,
+                        second one is rebuilding existing installations.<br><br>
+                        Last but not least, I'm recording short screencasts about efficient use of AutoCAD to share
+                        knowledge and best practices.<br><br>
+                    </span>
+                </p>
+                <button onclick="bfunction()" id="ibrm">Read more if you're curious</button>
+                <table class="Ctable">
+                    <tr>
+                        <td>
+                            <h2>Technical skills</h2>
+                            HTML<br>
+                            <div class="icskill">
+                                <div class="iskill html">50%</div>
+                            </div>
+                            CSS<br>
+                            <div class="icskill">
+                                <div class="iskill css">50%</div>
+                            </div>
+                            JavaScript<br>
+                            <div class="icskill">
+                                <div class="iskill javascript">10%</div>
+                            </div>
+                            Python – basic<br>
+                            AutoLISP – basic<br>
+                            Krita – advanced<br>
+                            Inkscape – advanced<br>
+                            Regex<br>
+                            Github<br>
+                            Notepad++<br>
+                            AutoCAD + CADWorx – expert<br>
+                            <!--It doesn't matter in front end developer work. On the other hand it shows that I'm expert in my field. Now I want to reach for other field.-->
+                            Micsrostation v7, v8i – advanced<br>
+                        </td>
+                        <td id="itd2">
+                            <h2>Soft skills</h2>
+                            Attention to detail<br>
+                            Problem-solving mind<br>
+                            Communication and interpersonal skills<br>
+                            Time management and organisational skills<br>
+                            Knowledge of international standards and codes<br>
+                            Out of the box thinking<br>
+                        </td>
+                    </tr>
+                </table>
+                <h2>Education</h2>
+                2007 Oct – 2012 Oct<br>
+                M. Sc. Eng. Environmental Protection in Power Industry<br>
+                Faculty of Energy and Environmental Engineering<br>
+                Silesian University of Technology, Gliwice, Poland<br>
+                <h3>Hobby</h3>
+                Drawing people, designing logos, fonts and posters, taking photos.<br>
+                I enjoy playing volleyball, soccer, badminton, hiking, running, swimming, canoeing, cycling.<br>
+                Board games.<br>
+                Solving math riddles.<br>
+                Books - for widening horizons just like travelling.<br>
+                <h3>Other</h3>
+                2016 – Fire Warden at CH2M Kraków Office<br>
+                2014 – Member of Emergency First Response Team (FLUOR Corp.)<br>
+                Driving license category B since 2004.
+                <!--Boring. One who doesn't have this those days is like withe crow.-->
+            </div>
+        </section>
+        <aside class="Caside">
+            <h2>Experience</h2>
+            <h3 id="h3i">Illustrator since the age of three</h3>
+            <h3>Piping engineer since 2013</h3>
+            <h4><b>2017</b> Nov – Present</h4>
+            Piping Design Engineer Bipromet SA Katowice, Poland<br>
+            <h4><b>2016</b> Mar – 2017 Nov</h4>
+            Piping Engineer’s Senior Assistant CH2M (Jacobs) Kraków, Poland<br>
+            <h4><b>2015</b> Nov – 2016 Feb</h4>
+            Associate Piping Design Engineer FLUOR Corporation Gliwice, Poland<br>
+            <h4><b>2015</b> May – Present</h4>
+            Freelance Graphic Designer Mysłowice, Poland<br>
+            <h4><b>2014</b> Oct – 2015 Apr</h4>
+            Associate Piping Design Engineer<br>
+            CB&I - Chicago Bridge & Iron Company Brno, Czech Republic<br>
+            <h4><b>2013</b> Feb – 2014 Sep</h4>
+            Associate Piping Design Engineer FLUOR Corporation Gliwice, Poland<br>
+            <h4><b>2012</b> Aug – 2013 Feb</h4>
+            Energy Economy Analysis Engineer<br>
+            Power Research & Testing Company ENERGOPOMIAR Ltd Gliwice, Poland<br>
+        </aside>
+    </div>
+    <footer class="Cfooter">
+        <h2><a href="https://stackoverflow.com/users/6725250/slawomir" target="_new">Thank you for reading.</a></h2>
+        <p>Sławomir Sosfa<br>
+            Piping engineer and front-end developer<br>
+            slawomir.sosfa(at)gmail.com<br></p>
+        <p id="iconsent">I hereby consent to my personal data being processed by Your Company for the purpose of
+            considering my application for the vacancy.</p>
+    </footer>
+</body>
+
+</html>

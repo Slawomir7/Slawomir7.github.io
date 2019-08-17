@@ -1,0 +1,199 @@
+/*Resumee Stylesheet*/
+/*Overall section*/
+* {
+    font-family: "Segoe UI semilight", Tahoma, Verdana, Sans-serif;
+	font-size:18px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+header.Cheader {
+    float: left;
+    text-align: left;
+    padding: 18px 0px 12px 27px;
+    color: #324354;
+}
+nav.Cnav {
+    overflow: hidden;
+    border-bottom: 3px solid #343434;
+    margin: 0% 5% 0% 5%;
+}
+nav.Cnav a {
+    float: right;
+    display: block;
+    padding: 14px 10px 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #435465;
+    margin-top: 58px;
+    border-bottom: 5px solid #f7f7f7;
+}
+nav.Cnav a:hover {
+	-webkit-animation: aHani 350ms forwards;
+	animation: aHani 350ms forwards;
+}
+	@-webkit-keyframes aHani {
+	to {
+        border-bottom: 5px solid #343434;
+        color: #000;
+	}
+}
+	@keyframes aHani {
+	to {
+        border-bottom: 5px solid #343434;
+        color: #000;
+	}
+}
+svg.Csvgc {
+    float: left;
+    margin: 30px 0px 0px 20px;
+}
+h1 {
+    font-size:42px;
+    font-family: "Segoe UI light", Tahoma, Verdana, Sans-serif;
+}
+h2 {
+	font-size:30px;
+    color: #213243;
+    font-family: "Segoe UI semilight", Tahoma, Verdana, Sans-serif;
+    padding: 30px 0px 12px 0px;
+}
+h3 {
+    font-size:24px;
+    color: #213243;
+    font-family: "Segoe UI semilight", Tahoma, Verdana, Sans-serif;
+    padding: 24px 0px 12px 0px;
+}
+h4 {
+    color: #213243;
+    font-family: "Segoe UI semilight", Tahoma, Verdana, Sans-serif;
+    font-weight: normal;
+    padding: 18px 0px 0px 0px;
+}
+#h3i {
+    font-size:24px;
+    color: #213243;
+    font-family: "Segoe UI semilight", Tahoma, Verdana, Sans-serif;
+    padding: 24px 0px 12px 10px;
+    margin: 0px 0px 0px -10px;
+    background-image: linear-gradient(0deg, #fcf 32%, #fdfdfd 32.1%);
+}
+body {
+	background-color: #f7f7f7;
+}
+/*-webkit prefixis reqiured to run website correctly in Safari browser.*/
+div.Cpage {
+    display: -webkit-flex;
+    display: ms-flex;
+    display: flex;
+}
+/*Section style for main content.*/
+section.Csection {
+    -webkit-flex: 62%;
+    -ms-flex: 62%;
+    flex: 62%;
+    background-color: white;
+    margin: 20px 20px 20px 50px;
+    padding: 20px 20px 20px 5%;
+    background-color: #fdfdfd;
+    border-radius: 5px;
+}
+/*Table style.*/
+table.Ctable td {
+    vertical-align: top;
+}
+table.Ctable #itd2 {
+    padding-left: 60px;
+}
+/*Skill bar style.*/
+.icskill {
+    width: 100%;
+    background-color: #f0f0f0;
+}
+.iskill {
+    text-align: left;
+    word-wrap: none;
+    padding-left: 2px;
+}
+.html {
+    width: 61%;
+    background-color: #afa;
+}
+.css {
+    width: 51%;
+    background-color: #faa;
+}
+.javascript {
+    width: 11%;
+    background-color: #aaf;
+}
+/*Style for secondary content.*/
+aside.Caside {
+    -webkit-flex: 38%;
+    -ms-flex: 38%;
+    flex: 38%;
+    height: 100%;
+    margin: 20px 50px 20px 50px;
+    padding: 20px 5% 20px 50px;
+    background-color: #fdfdfd;
+    border-radius: 5px;
+} 
+/*@media rule to reorder content into colum when screen width resolution is lower than 700px.*/
+@media screen and (max-width: 700px) {
+    div.Cpage {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 400px) {
+    nav.Cnav a {
+        float: none;
+        width: 100%;
+    }
+}
+/*Footer style.*/
+footer.Cfooter {
+    display: block;
+    color: #dfdfdf;
+    padding: 0px;
+    text-align: left;
+    background-image: radial-gradient(farthest-corner at 200% 0%, #565656 38%, #121212);
+}
+footer.Cfooter a {
+    color: #fefefe;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-left: 40px;
+}
+footer.Cfooter p {
+    padding-left: 40px;
+}
+footer.Cfooter p#iconsent {
+    padding: 40px;
+}
+
+/*Id are listed below.*/
+/*Read more if you're curious style*/
+#irmshow {
+    display: none;
+}
+#ibrm {
+    background-color: #fdfdfd;
+    border: 0px solid #fff;
+    border-bottom: 3px solid #324354;
+    color: #102132;
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+#ibrm:hover {
+    background-color: #ededed;
+    border-bottom: 3px solid #f90;
+}
+/*Image style.*/
+#iimg {
+    float: right;
+    margin: 20px 20% 20px 20px;
+}
