@@ -48,7 +48,7 @@ svg.Csvgc {
     margin: 30px 0px 0px 20px;
 }
 h1 {
-    font-size:42px;
+    font-size:36px;
     font-family: "Segoe UI light", Tahoma, Verdana, Sans-serif;
 }
 h2 {
@@ -156,7 +156,7 @@ footer.Cfooter {
     color: #dfdfdf;
     padding: 0px;
     text-align: left;
-    background-image: radial-gradient(farthest-corner at 200% 0%, #565656 38%, #121212);
+    background-image: radial-gradient(farthest-corner at 200% 0%, #787878 38%, #454545);
 }
 footer.Cfooter a {
     color: #fefefe;
