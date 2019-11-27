@@ -1,0 +1,226 @@
+    <!--
+    Slawomir Sosfa html resumee.
+    Below is head section with navigation pane, links to my online places, my name, logo etc.
+    HTML, CSS, JS and Images are merged into one file so they can be easily send as a whole. Usually I'm keeping them separated as they should be.
+    How to open this file: Change file format from txt to HTML to view it properly in browser.
+-->
+
+<!doctype HTML>
+<html>
+
+<head>
+    <!--JavaScript-->
+    <script src="soscv.js"></script>
+    <!--CSS stylesheet.-->
+    <link rel="stylesheet" href="soscv.css">
+    <link rel="shortcut icon" type="image/png" href="https://slawomir7.github.io/logo16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Sanchez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Amaranth|Nunito&display=swap" rel="stylesheet">
+    <title>Slawomir Sosfa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <nav class="Cnav" id="Itopnav">
+        <!--SVG logo.-->
+        <svg class="Csvgc" width="55" height="65" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="igrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#f50;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#fc0;stop-opacity:1">
+                </linearGradient>
+                <linearGradient id="igrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color: #f9f9f9; stop-opacity: 1" />
+                </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="53" height="65" fill="url(#igrad)" />
+            <circle cx="10" cy="10" r="15" stroke="url(#igrad2)" fill="transparent" stroke-width="10px" />
+            <circle cx="10" cy="40" r="15" stroke="url(#igrad2)" fill="transparent" stroke-width="10px" />
+            <circle cx="40" cy="10" r="15" stroke="url(#igrad2)" fill="transparent" stroke-width="10px" />
+            <rect x="25" y="25" rx="15" ry="15" width="30" height="45" fill="transparent" stroke="url(#igrad2)"
+                stroke-width="10px" />
+            <circle cx="10" cy="70" r="15" stroke="url(#igrad2)" fill="url(#igrad2)" stroke-width="10px" />
+            <circle cx="25" cy="25" r="5" stroke="url(#igrad2)" fill="url(#igrad2)" stroke-width="0px" />
+        </svg>
+        <header class="Cheader">
+            <h1>Slawomir Sosfa</h1>
+            <p id="ipunder">UX Designer</p>
+        </header>
+        <a href="https://www.linkedin.com/in/slawomirsosfa" target="_new">LinkedIn</a>
+        <a href="https://superuser.com/users/697313/slawomir" target="_new">Stackexchange</a>
+        <a href="http://www.logoword.blogspot.com" target="_new">Logoword</a>
+        <a href="https://knowledge.autodesk.com/profile/LZ1N3RYGLJBTR/screencasts" target="_new">Screencasts</a>
+        <a href="https://forums.autodesk.com/t5/user/viewprofilepage/user-id/2283590" target="_new">Autodesk</a>
+        <a href="javascript:void(0);" class="Cicon" onclick="funcexpand()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    
+</head>
+<!--Body. Here are sections about me, experience, skills, hobby etc. in a nutshell.-->
+
+<body>
+    <div class="Cpage">
+        <section class="Csection">
+            <!--Own design gallery.-->
+            <div class="gallery">
+                <h2 class="red">Gallery</h2>
+                <p>Logo, hand drawn fonts, glyphs and icons presented below are crafted carefully, with deep insight
+                    into purpose they serve, clean geometry and colors capturing brand character. Simple and
+                    distinctive design at the same time.</p>
+                <div class="galleryrow">
+                        <div class="gallerycolumn">
+                            <img src="Andes.png" alt="Andes logo. Red, orange arcs." onclick="galleryFunction(this);">
+                        </div>
+                        <div class="gallerycolumn">
+                            <img src="GRODNO.png" alt="Grodno logo. White sign and text on black background." onclick="galleryFunction(this);">
+                        </div>
+                        <div class="gallerycolumn">
+                            <img src="lynx.png" alt="Lynx logo. Geometric shape of lynx head." onclick="galleryFunction(this);">
+                        </div>
+                        <div class="gallerycolumn">
+                            <img src="DSS.png" alt="DSS logo. Flame. Broken hexagon. Yellow to red." onclick="galleryFunction(this);">
+                        </div>
+                        <div class="gallerycolumn">
+                            <img src="kinoenergia.png" alt="Kino Energia logo." onclick="galleryFunction(this);">
+                        </div>
+                    </div>
+                    <div class="galleryrow">
+                                <div class="gallerycolumn">
+                                    <img src="fest.png" alt="Fest logo. Drawn with paintbrush. Scanned and digitally refined." onclick="galleryFunction(this);">
+                                </div>
+                                <div class="gallerycolumn">
+                                    <img src="R.png" alt="Variation on capital letter R." onclick="galleryFunction(this);">
+                                </div>
+                                <div class="gallerycolumn">
+                                    <img src="RiW.png" alt="Robin in Wood. Contest logo for carpenter." onclick="galleryFunction(this);">
+                                </div>
+                                <div class="gallerycolumn">
+                                    <img src="ZOSM.png" alt="ZOSM logo. Blue z glyph with white arrowhead in whitespace." onclick="galleryFunction(this);">
+                                </div>
+                    </div>
+                <!--Expanding image container.-->
+                <div class="container">
+                    <!--Close image.-->
+                    <span onclick="this.parentElement.style.display='none'" class="closeimage">&times;</span>
+                    <!--Expand figure.-->
+                    <img id="expandedimage" style="width: 50%">
+                    <!--Image caption.-->
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div>
+                <h2 class="orange">Technical skills</h2>
+                <button class="button techbold"><strong>Pencil, pen & ink, marker</strong></button>
+                <button class="button techbold">Digital drawing tablet</button>
+                <button class="button techbold">DSLR camera</button>
+                <h2 class="red">Software</h2>
+                <button class="button overall"><strong>Inkscape</strong></button>
+                <button class="button overall"><strong>Krita</strong></button>
+                <button class="button overall">SketchBook</button>
+                <button class="button overall">GIMP</button>
+                <button class="button overall">HTML</button>
+                <button class="button overall">CSS</button>
+                <button class="button overall">JavaScript</button>
+                <button class="button overall">Visual Studio Code</button>
+                <button class="button overall">AutoCAD + CADWorx</button>
+                <!--It is powerful 3D modeling program with rendering options.-->
+                <!--It doesn't matter in user experience job. On the other hand it shows that I'm expert in my field. Now I want to excel in another field.-->
+                <button class="button overall">Regex</button>
+                <button class="button overall">Github</button>
+                <button class="button overall">Notepad++</button>
+                <h2>Soft skills</h2>
+                <button class="button soft"><strong>Creativity</strong></button>
+                <button class="button soft"><strong>English language</strong></button>
+                <button class="button soft">Attention to detail</button>
+                <button class="button soft">Problem-solving mind</button>
+                <button class="button soft">Communication and interpersonal skills</button>
+                <button class="button soft">Time management and organisational skills</button>
+                <button class="button soft">Out of the box thinking</button>
+                <h2>Hobby</h2>
+                <button class="button hobby">Drawing portraits, people, nature, designing logos, fonts and posters,
+                    taking photos</button>
+                <button class="button hobby">Mixed-media images</button>
+                <button class="button hobby">Playing volleyball, soccer, badminton, hiking, running, swimming, canoeing,
+                    cycling</button>
+                <button class="button hobby">Board games Books & traveling - for widening horizons</button>
+            </div>
+            <div>
+                <h2 class="orange">Experience</h2>
+                <h2 id="h3i">Illustrator since the age of three</h2>
+                <h2>Graphic designer since 2010</h2>
+                Unep/Grid "Ekojazda - ale jazda" Polish contest for billboard - distinction<br>
+                IŚEM logo - made new logo for "Studenckie Koło Naukowe Inżynierii Środowiska w Energetyce i
+                Motoryzacji"<br>
+                <h2>Piping engineer since 2013</h2>
+                2017 – Present – Piping Design Engineer, Bipromet SA Katowice, Poland<br>
+                2016 – Piping Engineer’s Senior Assistant, CH2M (Jacobs) Kraków, Poland<br>
+                2015 – Associate Piping Design Engineer, FLUOR Corporation Gliwice, Poland<br>
+                2014 – Associate Piping Design Engineer, CB&I - Chicago Bridge & Iron Company Brno,
+                Czech Republic<br>
+                2013 – Associate Piping Design Engineer, FLUOR Corporation Gliwice, Poland<br>
+                2012 – Energy Economy Analysis Engineer, Power Research & Testing Company
+                ENERGOPOMIAR Ltd Gliwice, Poland<br>
+            </div>
+            <div>
+                <h2>Education</h2>
+                2007 – 2012<br>
+                M. Sc. Eng. Environmental Protection in Power Industry<br>
+                Faculty of Energy and Environmental Engineering<br>
+                Silesian University of Technology, Gliwice, Poland<br>
+                <h2>Other</h2>
+                2016 – Fire Warden at CH2M Kraków Office<br>
+                2014 – Member of Emergency First Response Team (FLUOR Corp.)<br>
+                2004 – Driving license category B
+            </div>
+            <div>
+                <h2>About me</h2>
+                <p>
+                    Hi, I'm Slawomir. I'm UX designer and piping engineer.
+                    <span id="irmhide"></span><br><span id="irmshow">
+                        <!--This part is hidden by default.-->
+                        <br>Why I'm explaining about piping engineering? Because in its roots it's very similar to UX
+                        designer job. You will see. It's just about pipes. Small and big ones. Diameter 15mm up to
+                        1000mm and above.
+                        Easy topic? Yes, it's only about straight pipes?<br><br>
+                        Lets take power plant for example. How long are pipes inside one powerplant? 1 km? 10km? Could
+                        be even more than 100 km.<br><br>
+                        Steel pipes, stainless steel pipes, plastic pipes. Which wall thickness? With or without
+                        insulation? Heat tracing? Personal protection? Should it be lined inside? Rubber, glass? What
+                        flows inside? Water, steam, natural gas, air, compressed air, process air, slurry. What is the
+                        fluid pressure and temperature value? What pressure rating flanges we need? Would pipe supports
+                        carry the load? Do we need anchor points? Do pipes have enough flexibility? Is there enough
+                        space between pipes and electric trays? Is steel structure strong enough? Seems overwhelming.
+                        Yes, it is. Even after dozen years of experience in this field there is still a lot to learn.
+                        Industry is still moving on, new technologies are continuously shaping this proffesion. All of
+                        above and much more need to be done to complete a plant piping. This is a job for well organized
+                        team. Tasks are divided between specialized engineers. I'm one of them.<br><br>
+                        Beside brain, my tools to achive goals is software such as Plant 3D and CADWorx Plant Design.
+                        Both are based on databases. One out of many task is to get reports like quantity material
+                        report, clash report, isometric drawing list. Another is design simple (doesn't mean easy) 3D
+                        piping plant layout. Valves, operators, pumps, tanks pressure indicators and other equipment
+                        need to be placed where man can reach it easily and operate smoothly. In general whole plant
+                        need to be user friendly nad safe.<br><br>
+                        User experience is a essential part of design process. Each designer is responsible for it.
+                        Placing everything on drawing is next milestone. It's a lot work to give clean, meaningful and
+                        easy to understand layouts, isometric drawings, arrangements.<br><br>
+                    </span>
+                </p>
+                <button onclick="bfunction()" id="ibrm">Read more</button>
+            </div>
+    </div>
+    </section>
+    </div>
+    <footer class="Cfooter">
+        <img id="iimg" src="portrait240t.png" alt="Authors portrait" height="166" width="166">
+        <h4 style="color: inherit; margin-left: 40px">Thank you for reading.</h4>
+        <p><br>
+            Sławomir Sosfa<br>
+            UX Designer<br>
+            slawomir.sosfa@gmail.com<br></p>
+        <p id="iconsent">I hereby consent to my personal data being processed by Your Company for the purpose of
+            considering my application for the vacancy.</p>
+    </footer>
+</body>
+
+</html>
